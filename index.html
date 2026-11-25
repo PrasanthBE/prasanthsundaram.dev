@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <base href="./">
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prasanth S | Flutter Developer Portfolio</title>
+  <meta name="description" content="Prasanth S, Flutter developer in Chennai. Flutter and Dart apps for Android and iOS: PrepBuddy, Irai Yoga and the Origa lease-management apps.">
+  <meta name="author" content="Prasanth S">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Prasanth S | Flutter Developer">
+  <meta property="og:description" content="Cross-platform Android and iOS apps, from Figma to the Play Store. This site is built with Flutter.">
+  <meta property="og:url" content="https://prasanthbe.github.io/Prasanth.github.io/">
+  <meta property="og:image" content="https://prasanthbe.github.io/Prasanth.github.io/share-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="theme-color" content="#ffffff">
+
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="Prasanth S">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="manifest" href="manifest.json">
+
+  <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
+
+  <style>
+    html, body { margin: 0; height: 100%; background: #fff; }
+    #loader { position: fixed; inset: 0; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 22px; background: #f7f7f9; color: #111; font-family: Outfit, "Segoe UI", Arial, sans-serif; transition: opacity .5s ease; }
+    #loader.done { opacity: 0; pointer-events: none; }
+    #loader b { font-size: clamp(2rem, 6vw, 4rem); font-weight: 900; letter-spacing: -.04em; }
+    #loader b i { font-style: normal; color: #ff2d20; }
+    #loader span { width: 140px; height: 2px; background: rgba(0,0,0,.08); overflow: hidden; }
+    #loader span::after { content: ""; display: block; width: 40%; height: 100%; background: #ff2d20; animation: slide 1.1s infinite ease-in-out; }
+    @keyframes slide { from { transform: translateX(-100%); } to { transform: translateX(250%); } }
+  </style>
+</head>
+<body>
+  <div id="loader" role="status" aria-label="Loading portfolio"><b>PRASANTH <i>S</i></b><span></span></div>
+
+  <noscript>
+    <h1>Prasanth S, Flutter Developer</h1>
+    <p>Flutter developer in Chennai building Android and iOS apps: PrepBuddy (learning app), Irai Yoga (wellness) and Origa Market (equipment leasing).</p>
+    <p><a href="https://www.linkedin.com/in/prasanth-s-684997216">LinkedIn</a> | <a href="mailto:prasanthsundarambe@gmail.com">Email</a></p>
+    <p>Please turn on JavaScript to see the full portfolio.</p>
+  </noscript>
+
+  <script>
+    window.addEventListener('flutter-first-frame', function () {
+      var l = document.getElementById('loader');
+      l.classList.add('done');
+      setTimeout(function () { l.remove(); }, 600);
+    });
+  </script>
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
